@@ -26,6 +26,10 @@
         <activity
             android:name=".MemoActivity"
             android:theme="@style/Theme.MyStudyCalendar"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.MyStudyCalendar"/>
+
     </application>
 
 </manifest>

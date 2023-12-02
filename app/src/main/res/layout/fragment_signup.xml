@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 아이디와 비밀번호를 입력하는 부분 -->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 아이디 입력란 -->
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="아이디"
+            android:inputType="text"
+            android:paddingLeft="9dp"
+            android:textColor="#000000"
+            android:textColorHint="#8D000000" />
+
+        <!-- 비밀번호 입력란 -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#8D000000"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/editTextId" />
+    </LinearLayout>
+
+    <!-- 로그인 및 회원가입 버튼이 있는 부분 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- 로그인 버튼 -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#0E5BDF"
+            android:padding="5dp"
+            android:text="로그인" />
+
+        <!-- 회원가입 버튼 -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center|bottom"
+            android:backgroundTint="#0E5BDF"
+            android:padding="5dp"
+            android:text="회원가입" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
